@@ -25,6 +25,7 @@ export class Dashboard extends React.Component {
 
     renderCard() {
     if(this.props.cards !== undefined) {
+        console.log(this.props.cards.imageUrls)
         return (
         <div className="visible-card">
             <img className="card-image" src={`${this.props.cards.imageUrls}`}/>
