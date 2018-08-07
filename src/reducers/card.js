@@ -9,7 +9,7 @@ const initialState = {
   error: null
 }
 
-export function cardReducer(state=intialState, action) {
+export function cardReducer(state=initialState, action) {
   switch(action.type) {
     case FETCH_CARD_REQUEST:
     return {
@@ -21,10 +21,11 @@ export function cardReducer(state=intialState, action) {
     case FETCH_CARD_SUCCESS:
     return {
       ...state,
-      cards: action.cards,
+      cards: action.data,
       loading: false,
       error: null
     }
+
     case FETCH_CARD_ERROR:
     return {
       ...state,

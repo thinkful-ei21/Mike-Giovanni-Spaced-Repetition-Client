@@ -1,12 +1,15 @@
 import React from 'react';
+import './dashboard.css'
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import {fetchProtectedData} from '../actions/protected-data';
 import { fetchCard } from '../actions/cards';
+// import { compareResult } from '../actions/compare-result';
 
 export class Dashboard extends React.Component {
+
     componentDidMount() {
-        this.props.dispatch(fetchProtectedData());
+        // this.props.dispatch(fetchProtectedData());
         this.getNextCard();
     }
 
@@ -14,19 +17,43 @@ export class Dashboard extends React.Component {
         this.props.dispatch(fetchCard());
     }
 
+    submitGuess(e) {
+        e.preventDefault();
+        console.log(this.input.value)
+        // this.props.dispatch(compareResult(this.input.value)))
+    }
+
+    renderCard() {
+    if(this.props.cards !== undefined) {
+        return (
+        <div className="visible-card">
+            <img className="card-image" src={`${this.props.cards.imageUrls}`}/>
+        </div>
+        )}
+    }
+
     render() {
         return (
-            <div className="dashboard">
+            <main className="dashboard">
                 <div className="dashboard-username">
                     Welcome {this.props.username}!
                 </div>
-                {/* <div className="dashboard-protected-data">
-                    Protected data: {this.props.protectedData}
-                </div> */}
                 <div className="card">
-                    {console.log(this.props.card)}
+                    {this.renderCard()}
                 </div>
-            </div>
+                 <form 
+                    className="submit-form" 
+                    onSubmit={e => this.submitGuess(e)}
+                    aria-label="enter guess">
+                    <input 
+                        type="text"
+                        placeholder="location"
+                        aria-label="submit button"
+                        ref={input => (this.input = input)} 
+                    />
+                    <button className="answer-button">Submit</button>
+                </form>
+            </main>
         );
     }
 }
@@ -35,9 +62,8 @@ const mapStateToProps = state => {
     const {currentUser} = state.auth;
     return {
         username: state.auth.currentUser.username,
-        name: `${currentUser.firstName} ${currentUser.lastName}`,
         protectedData: state.protectedData.data,
-        cards: state.cards
+        cards: state.cards.cards
     };
 };
 

@@ -20,7 +20,7 @@ export const fetchCardError = error => ({
 });
 
 export const fetchCard = () => (dispatch, getState) => {
-const state = getState();
+  const state = getState();
 
   dispatch(fetchCardRequest())
   fetch(`${API_BASE_URL}/cards`, {
@@ -30,9 +30,11 @@ const state = getState();
         Authorization: `Bearer ${state.auth.authToken}`
     }
 })
-    // .then(res => normalizeResponseErrors(res))
+    .then(res => normalizeResponseErrors(res))
     .then(res => res.json())
-    .then(({data}) => dispatch(fetchCardSuccess(data)))
+    .then((data) => {
+        dispatch(fetchCardSuccess(data))
+    })
     .catch(err => {
         dispatch(fetchCardError(err));
     });
