@@ -2,14 +2,12 @@ import React from 'react';
 import './dashboard.css'
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
-import {fetchProtectedData} from '../actions/protected-data';
 import { fetchCard } from '../actions/cards';
-// import { compareResult } from '../actions/compare-result';
+import { sendAnswer } from '../actions/answer';
 
 export class Dashboard extends React.Component {
 
     componentDidMount() {
-        // this.props.dispatch(fetchProtectedData());
         this.getNextCard();
     }
 
@@ -20,18 +18,25 @@ export class Dashboard extends React.Component {
     submitGuess(e) {
         e.preventDefault();
         console.log(this.input.value)
-        // this.props.dispatch(compareResult(this.input.value)))
+        this.props.dispatch(sendAnswer(this.input.value))
     }
 
     renderCard() {
     if(this.props.card !== undefined) {
-        console.log(this.props.card)
         return (
         <div className="visible-card">
             <img className="card-image" src={this.props.card}/>
         </div>
         )}
     }
+
+    showResult() {
+        return (
+            <div className="result">
+                {this.props.result}
+                {this.props.answer}
+            </div>
+        )}
 
     render() {
         return (
@@ -52,7 +57,9 @@ export class Dashboard extends React.Component {
                         aria-label="submit button"
                         ref={input => (this.input = input)} 
                     />
-                    <button className="answer-button">Submit</button>
+                    <button 
+                        className="answer-button" type="submit"
+                        >Submit</button>
                 </form>
             </main>
         );
@@ -64,7 +71,9 @@ const mapStateToProps = state => {
     return {
         username: state.auth.currentUser.username,
         protectedData: state.protectedData.data,
-        card: state.cards.card
+        card: state.cards.card,
+        answer: state.answer.answer,
+        result: state.answer.result
     };
 };
 
