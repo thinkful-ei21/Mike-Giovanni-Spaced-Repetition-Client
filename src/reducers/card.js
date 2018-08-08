@@ -5,7 +5,7 @@ import {
 } from '../actions/cards';
 
 const initialState = {
-  cards: {},
+  card: '',
   error: null
 }
 
@@ -14,14 +14,14 @@ export function cardReducer(state=initialState, action) {
     case FETCH_CARD_REQUEST:
     return {
       ...state,
-      cards: {},
+      card: '',
       loading: true
     };
 
     case FETCH_CARD_SUCCESS:
     return {
       ...state,
-      cards: action.data,
+      card: action.data,
       loading: false,
       error: null
     }

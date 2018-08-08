@@ -24,11 +24,11 @@ export class Dashboard extends React.Component {
     }
 
     renderCard() {
-    if(this.props.cards !== undefined) {
-        console.log(this.props.cards.imageUrls)
+    if(this.props.card !== undefined) {
+        console.log(this.props.card)
         return (
         <div className="visible-card">
-            <img className="card-image" src={`${this.props.cards.imageUrls}`}/>
+            <img className="card-image" src={this.props.card}/>
         </div>
         )}
     }
@@ -64,7 +64,7 @@ const mapStateToProps = state => {
     return {
         username: state.auth.currentUser.username,
         protectedData: state.protectedData.data,
-        cards: state.cards.cards
+        card: state.cards.card
     };
 };
 
