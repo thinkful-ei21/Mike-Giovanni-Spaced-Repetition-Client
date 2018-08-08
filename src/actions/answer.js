@@ -23,8 +23,8 @@ export const sendAnswer = answer => (dispatch, getState) => {
   console.log('sending answer ', answer, state)
 
   dispatch(sendAnswerRequest(answer))
-  fetch(`${API_BASE_URL}/answer`, {
-    method: 'POST',
+  fetch(`${API_BASE_URL}/cards`, {
+    method: 'PUT',
     headers: {
         Authorization: `Bearer ${state.auth.authToken}`,
         'Content-Type': 'application/json'

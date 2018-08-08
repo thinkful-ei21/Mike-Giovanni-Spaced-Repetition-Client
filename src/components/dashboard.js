@@ -33,6 +33,7 @@ export class Dashboard extends React.Component {
     }
 
     showResult() {
+        //this needs to be conditional
         return (
             <div className="result">
                 {this.props.result}
