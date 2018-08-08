@@ -1,11 +1,7 @@
 import {
   SEND_ANSWER_REQUEST,
   SEND_ANSWER_SUCCESS,
-  SEND_ANSWER_ERROR,
-  // RECEIVE_ANSWER_REQUEST,
-  // RECEIVE_ANSWER_SUCCESS,
-  // RECEIVE_ANSWER_ERROR
-
+  SEND_ANSWER_ERROR
 } from '../actions/answer';
 
 const initialState = {
@@ -39,28 +35,6 @@ export function answerReducer(state=initialState, action) {
       loading: false,
       error: 'There was an error sending answer'
     }
-
-    // case RECEIVE_ANSWER_REQUEST:
-    // return {
-    //   ...state,
-    //   card: '',
-    //   loading: true
-    // };
-
-    // case RECEIVE_ANSWER_SUCCESS:
-    // return {
-    //   ...state,
-    //   card: action.data,
-    //   loading: false,
-    //   error: null
-    // }
-
-    // case RECEIVE_ANSWER_ERROR:
-    // return {
-    //   ...state,
-    //   loading: false,
-    //   error: 'There was an error fetching answer'
-    // }
 
     default:
     return state;
