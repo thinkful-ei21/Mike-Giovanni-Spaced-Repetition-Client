@@ -19,6 +19,7 @@ export class Dashboard extends React.Component {
         e.preventDefault();
         console.log(this.input.value)
         this.props.dispatch(sendAnswer(this.input.value))
+        // this.showResult()
     }
 
     renderCard() {
@@ -33,13 +34,26 @@ export class Dashboard extends React.Component {
     }
 
     showResult() {
-        //this needs to be conditional
-        return (
-            <div className="result">
-                {this.props.result}
-                {this.props.answer}
-            </div>
-        )}
+        let answer = this.props.answer.charAt(0).toUpperCase() + this.props.answer.slice(1);
+
+        if(this.props.result === false) {
+            return (
+                <div className="result">
+                    {console.log(this.props.result)}
+                    {answer} is incorrect. Please try again
+                    {/* {this.getNextCard()} */}
+                </div>
+            )
+        } else {
+            return (
+                <div className="result">
+                    {console.log(this.props.result)}
+                    {answer} is correct!
+                    {/* {this.getNextCard()} */}
+                </div>
+            )
+        }
+    }
 
     render() {
         return (
@@ -49,6 +63,9 @@ export class Dashboard extends React.Component {
                 </div>
                 <div className="card">
                     {this.renderCard()}
+                </div>
+                <div className="result">
+                    {this.showResult()}
                 </div>
                  <form 
                     className="submit-form" 
