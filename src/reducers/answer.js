@@ -24,7 +24,7 @@ export function answerReducer(state=initialState, action) {
     case SEND_ANSWER_SUCCESS:
     return {
       ...state,
-      answer: action.data.answer,
+      answer: action.data.correctAnswer,
       result: action.data.result,
       loading: false,
       error: null
