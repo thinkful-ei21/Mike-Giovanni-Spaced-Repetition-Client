@@ -1,4 +1,5 @@
 import React from 'react';
+import './header-bar.css'
 import {connect} from 'react-redux';
 import {clearAuth} from '../actions/auth';
 import {clearAuthToken} from '../local-storage';

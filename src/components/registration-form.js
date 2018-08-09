@@ -28,7 +28,9 @@ export class RegistrationForm extends React.Component {
                     component={Input}
                     type="text"
                     name="username"
+                    id="username"
                     validate={[required, nonEmpty, isTrimmed]}
+                    autoFocus
                 />
                 <label htmlFor="password">Password</label>
                 <Field

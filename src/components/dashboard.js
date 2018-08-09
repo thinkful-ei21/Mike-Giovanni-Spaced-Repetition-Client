@@ -20,7 +20,6 @@ export class Dashboard extends React.Component {
         e.preventDefault();
         console.log(this.input.value)
         this.props.dispatch(sendAnswer(this.input.value))
-        // this.showResult();
     }
 
     renderCard() {
@@ -38,7 +37,7 @@ export class Dashboard extends React.Component {
         if (this.props.result !== '' && this.props.answer) { 
             console.log(this.props)
             return (
-            <div className="result">
+            <div className="result ">
                 {this.showResult()}
                 </div>
             )
@@ -50,9 +49,12 @@ export class Dashboard extends React.Component {
                 aria-label="enter guess">
                 <input 
                     type="text"
+                    className="location-input"
+                    required="required"
                     placeholder="location"
                     aria-label="submit button"
-                    ref={input => (this.input = input)} 
+                    ref={input => (this.input = input)}
+                    autoFocus
                 />
                 <button 
                     className="answer-button" type="submit"
@@ -69,7 +71,7 @@ export class Dashboard extends React.Component {
 
         if(this.props.result === false) {
             return (
-                <div className="result">
+                <div className="result incorrect">
                     {console.log(this.props.result)}
                     The correct answer is {answer}
                     <button onClick={e => this.getNextCard()}>Next</button>
@@ -77,7 +79,7 @@ export class Dashboard extends React.Component {
             )
         } else {
             return (
-                <div className="result">
+                <div className="result correct">
                     {answer} is correct!
                     <button onClick={e => this.getNextCard()}>Next</button>
                 </div>
@@ -87,7 +89,7 @@ export class Dashboard extends React.Component {
 
     render() {
         return (
-            <main className="dashboard">
+            <main className="dashboard" role="main">
                 <div className="dashboard-username">
                     Welcome {this.props.username}!
                 </div>

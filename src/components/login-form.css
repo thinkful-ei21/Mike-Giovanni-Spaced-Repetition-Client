@@ -1,0 +1,32 @@
+form.login-form {
+  margin:  10px auto;
+  padding: 40px 10px;
+  color: rgba(73, 64, 64, 0.658);
+  border: 1px solid rgb(117, 29, 29);
+  border-radius: 50px;
+  width: 280px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+input[type="text"]#username,
+input[type="password"]#password,
+input[type="password"]  {
+	width: 250px;
+	height: 30px;
+  margin: 10px auto;
+  border: 1px solid rgb(117, 29, 29);
+  font-size: 25px;
+}
+
+.login-form > button  {
+  width: 120px;
+	height: 45px;
+	padding: 10px;
+	font-size: 18px;
+	margin: 20px 0;
+	border-radius: 3px;
+}
+

@@ -1,0 +1,49 @@
+.home > h2 {
+  text-align: center;
+  color: rgb(117, 29, 29);
+  margin: 10px;
+}
+
+p {
+  width: 500px;
+  margin: 40px auto;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.register-link, .login-link {
+  cursor: pointer;
+  color: rgb(117, 29, 29);
+}
+.register-link {
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 295px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+  p {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  p {
+    width: 300px;
+  }
+
+}

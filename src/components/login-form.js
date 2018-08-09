@@ -1,4 +1,5 @@
 import React from 'react';
+import './login-form.css'
 import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
 import {login} from '../actions/auth';
@@ -32,6 +33,7 @@ export class LoginForm extends React.Component {
                     name="username"
                     id="username"
                     validate={[required, nonEmpty]}
+                    autoFocus
                 />
                 <label htmlFor="password">Password</label>
                 <Field
