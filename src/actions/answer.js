@@ -17,10 +17,13 @@ export const sendAnswerError = error => ({
   error
 });
 
+export const CLEAR_ANSWER = 'CLEAR_ANSWER';
+export const clearAnswer = () => ({
+  type: CLEAR_ANSWER
+});
+
 export const sendAnswer = answer => (dispatch, getState) => {
   const state = getState();
-
-  console.log('sending answer ', answer, state)
 
   dispatch(sendAnswerRequest(answer))
   fetch(`${API_BASE_URL}/cards`, {
@@ -42,6 +45,8 @@ export const sendAnswer = answer => (dispatch, getState) => {
   .then((data) => {
       dispatch(sendAnswerSuccess(data))
   })
+  .then(() => console.log('sending answer ', answer, state)
+  )
   .catch(err => {
       dispatch(sendAnswerError(err));
   })

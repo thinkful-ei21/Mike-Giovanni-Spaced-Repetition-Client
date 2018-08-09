@@ -1,7 +1,8 @@
 import {
   SEND_ANSWER_REQUEST,
   SEND_ANSWER_SUCCESS,
-  SEND_ANSWER_ERROR
+  SEND_ANSWER_ERROR,
+  CLEAR_ANSWER
 } from '../actions/answer';
 
 const initialState = {
@@ -34,6 +35,12 @@ export function answerReducer(state=initialState, action) {
       ...state,
       loading: false,
       error: 'There was an error sending answer'
+    }
+
+    case CLEAR_ANSWER:
+    return {
+      answer: '',
+      result: ''
     }
 
     default:
