@@ -71,7 +71,7 @@ export class Dashboard extends React.Component {
             return (
                 <div className="result">
                     {console.log(this.props.result)}
-                    {answer} is incorrect. The correct answer is {answer} Please try again
+                    The correct answer is {answer}
                     <button onClick={e => this.getNextCard()}>Next</button>
                 </div>
             )
