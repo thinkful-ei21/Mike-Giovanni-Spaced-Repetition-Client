@@ -21,31 +21,40 @@ export class RegistrationForm extends React.Component {
         return (
             <form
                 className="login-form"
+                aria-live="polite"
+                aria-atomic="true"
+                role="complementary"
                 onSubmit={this.props.handleSubmit(values =>
                     this.onSubmit(values)
                 )}>
                 <h2>Register</h2>
-                <label htmlFor="username">Username</label>
                 <Field
                     component={Input}
                     type="text"
+                    label="Username"
                     name="username"
                     id="username"
+                    aria-label="Username"
+                    aria-required="true"
                     validate={[required, nonEmpty, isTrimmed]}
                     autoFocus
                 />
-                <label htmlFor="password">Password</label>
                 <Field
                     component={Input}
                     type="password"
                     name="password"
+                    label="Password"
+                    aria-label="Password"
+                    aria-required="true"
                     validate={[required, passwordLength, isTrimmed]}
                 />
-                <label htmlFor="passwordConfirm">Confirm password</label>
                 <Field
                     component={Input}
                     type="password"
                     name="passwordConfirm"
+                    label="Confirm Password"
+                    aria-label="Confirm Password"
+                    aria-required="true"
                     validate={[required, nonEmpty, matchesPassword]}
                 />
                 <button
