@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  padding: 0 0 150px 0;
+  padding: 0 0 250px 0;
   font-family: sans-serif;
   text-align: center;
   background-image: url('images/oldmap.jpg');
@@ -9,9 +9,28 @@ body {
   background-repeat: no-repeat;
 }
 
+h1, h2 {
+  font-family: 'Rufina', serif;
+}
+
+p, button {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 1280px) {
+  body {
+    padding-bottom: 600px; 
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    padding-bottom: 450px; 
+  }
+}
 
 @media only screen and (max-width: 550px) {
   body {
-    padding-bottom: 250px; 
+    padding-bottom: 290px; 
   }
 }

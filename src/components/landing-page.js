@@ -13,11 +13,11 @@ export function LandingPage(props) {
 
     return (
         <div className="home">
-        <p>A spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. Try to match the correct country name to each image that gets displayed; countries you identify accurately show up less often</p>
+        <p>A spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. <br /><br />Match the correct country name to each image. Countries you identify accurately show up less often.</p>
             <h2>Login</h2>
             <LoginForm />
-            or
-            <Link to="/register" className="register-link"><h2>Register</h2></Link>
+            {/* or
+            <Link to="/register" className="register-link"><h2>Register</h2></Link> */}
         </div>
     );
 }
