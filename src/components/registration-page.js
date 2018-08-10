@@ -11,7 +11,7 @@ export function RegistrationPage(props) {
         return <Redirect to="/dashboard" />;
     }
     return (
-        <div className="home registration-text register-page">
+        <div className="home registration-text register-page" role="complementary" aria-live="polite" aria-atomic="true">
             <RegistrationForm />
         </div>
     );

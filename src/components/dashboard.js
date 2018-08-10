@@ -28,7 +28,7 @@ export class Dashboard extends React.Component {
         <div className="visible-card">
             <img className="card-image" 
             src={this.props.card} 
-            alt={this.props.card.imageUrls}/>
+            alt={this.props.card}/>
         </div>
         )}
     }
@@ -89,7 +89,7 @@ export class Dashboard extends React.Component {
 
     render() {
         return (
-            <main className="dashboard" role="main">
+            <main className="dashboard" role="main" aria-live="polite" aria-atomic="true" >
                 <div className="dashboard-username">
                     Welcome {this.props.username}!
                 </div>

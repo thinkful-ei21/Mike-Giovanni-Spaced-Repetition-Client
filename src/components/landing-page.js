@@ -12,7 +12,7 @@ export function LandingPage(props) {
     }
 
     return (
-        <div className="home">
+        <div className="home" role="complementary" aria-live="polite" aria-atomic="true">
         <p>A spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. <br /><br />Match the correct country name to each image. Countries you identify accurately show up less often.</p>
         <LoginForm />
         </div>
