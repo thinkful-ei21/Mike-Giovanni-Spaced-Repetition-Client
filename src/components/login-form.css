@@ -31,7 +31,9 @@ input[type="password"]  {
 	height: 45px;
 	padding: 10px;
 	font-size: 18px;
-	margin: 20px 0;
+  margin: 20px 0;
+  background-color: rgb(117, 29, 29);
+  color: white;
   border: 1px solid rgb(117, 29, 29);
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -41,8 +43,9 @@ input[type="password"]  {
 }
 
 .login-form > button:hover {
-  color: ;
-  background-color: ;
+  color: rgb(117, 29, 29);
+  background-color: white;
+  border: 1px solid rgb(117, 29, 29);
 }
 
 .register-text, .login-text {

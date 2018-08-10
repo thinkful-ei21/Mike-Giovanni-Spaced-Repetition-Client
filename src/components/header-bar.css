@@ -1,9 +1,6 @@
 .header-bar {
   background-color: rgb(117, 29, 29);
-  /* color: rgb(142, 224, 204); */
-  /* color: rgb(250, 230, 191); */
   color: white;
-  /* text-shadow: 3px 2px  black; */
   height: 100px;
   margin-top: -30px;
 }
@@ -19,7 +16,9 @@
   width: 80px;
   height: 35px;
   margin: 0;
-  border: 1px solid rgb(142, 224, 204);
+  color: white;
+  background-color: rgb(117, 29, 29);
+  border: 1px solid white;
   font-size: 18px;
   position: absolute;
   top: 30px;
@@ -33,7 +32,8 @@
 
 .header-bar > button:hover  {
   color: rgb(117, 29, 29);
-  background-color: rgb(142, 224, 204);
+  background-color: white;
+  border: 1px solid rgb(117, 29, 29);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -55,6 +55,7 @@
     position: absolute;
     border-radius: 8px;
     top: 80px;
+    padding: 2px 0;
   }
 
 }
