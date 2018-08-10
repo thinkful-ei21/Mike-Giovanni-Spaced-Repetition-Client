@@ -19,6 +19,8 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 - Cards maintain a record of how many times in a row they were answered correctly
 - Correctly answered cards will be seen exponentially less often
 - Users have their progress tracked and stored across log-in sessions
+- Mobile UI
+- JWT Authentication for users
 
 ### STACK
 
