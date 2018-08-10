@@ -1,6 +1,17 @@
 body {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 150px 0;
   font-family: sans-serif;
   text-align: center;
+  background-image: url('images/oldmap.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 550px) {
+  body {
+    padding-bottom: 250px; 
+  }
 }
