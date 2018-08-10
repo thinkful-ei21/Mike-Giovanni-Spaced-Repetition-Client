@@ -1,7 +1,6 @@
 form.login-form {
   margin:  20px auto;
   padding: 0 10px 40px 10px;
-  /*color: rgba(73, 64, 64, 0.658);*/
   background-color: rgba(224, 184, 116, 0.555);
   font-family: 'Rufina', serif;
   font-size: 20px;
@@ -39,6 +38,11 @@ input[type="password"]  {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.login-form > button:hover {
+  color: ;
+  background-color: ;
 }
 
 .register-text, .login-text {
