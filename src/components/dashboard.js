@@ -74,14 +74,14 @@ export class Dashboard extends React.Component {
                 <div className="result incorrect">
                     {console.log(this.props.result)}
                     The correct answer is {answer}
-                    <button onClick={e => this.getNextCard()}>Next</button>
+                    <button autoFocus onClick={e => this.getNextCard()} >Next</button>
                 </div>
             )
         } else {
             return (
                 <div className="result correct">
                     {answer} is correct!
-                    <button onClick={e => this.getNextCard()}>Next</button>
+                    <button autoFocus onClick={e => this.getNextCard()} >Next</button>
                 </div>
             )
         }
