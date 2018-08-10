@@ -37,6 +37,8 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 - Set aside more time for testing next time
 
 ### FUTURE FEATURES:
-- add daily sessions with end of session summary statistics
-- pull images from google dynamically
+- Add daily sessions with end of session summary statistics
+- Since we have multiple images for each location, If user gets answer wrong multiple times, it will stick to just a couple of images,
+  if user is on winning streak, the count of images that are cycled through increase
+- Pull images from google dynamically
 
