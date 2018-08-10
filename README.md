@@ -13,7 +13,7 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 
 ![Mobile Small Register Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-52-34.png?raw=true "Mobile Small Register Page")![Mobile Small Home Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-27-28.png?raw=true "Mobile Small  Home Page")
 
-### APPlICATION FEATURES
+### APPLICATION FEATURES
 
 - Country cards each have a collection of images, one of which is displayed each time the card comes up
 - Cards maintain a record of how many times in a row they were answered correctly
