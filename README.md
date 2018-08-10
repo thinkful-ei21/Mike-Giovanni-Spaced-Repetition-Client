@@ -9,9 +9,9 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 
 ![Desktop Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-25-50.png?raw=true "Desktop Screenshot")
 
-![Mobile Small Login Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-28-02.png?raw=true "Mobile Small  Login Page")![Mobile Small Register Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-52-34.png?raw=true "Mobile Small Register Page")
+![Mobile Small Login Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-28-02.png?raw=true "Mobile Small  Login Page")![Mobile Small Home Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-27-47.png?raw=true "Mobile Small  Home Page")
 
-![Mobile Small Home Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-27-47.png?raw=true "Mobile Small  Home Page")![Mobile Small Home Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-27-28.png?raw=true "Mobile Small  Home Page")
+![Mobile Small Register Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-52-34.png?raw=true "Mobile Small Register Page")![Mobile Small Home Page](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Client/blob/master/src/images/Screenshot%20from%202018-08-10%2014-27-28.png?raw=true "Mobile Small  Home Page")
 
 ### APPlICATION FEATURES
 
@@ -30,3 +30,13 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 
 
 ### LESSONS LEARNED
+
+- Trello boards are super helpful
+- Set aside more time for testing next time
+
+future features:
+- add daily sessions with end of session summary statistics
+-pull images from google dynamically
+
+
+
