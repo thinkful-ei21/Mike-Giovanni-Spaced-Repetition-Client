@@ -1,6 +1,6 @@
 # WHERE AM I
 
-'Where am I' is a spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. Match the correct country name to each image. Countries you identify accurately show up less often.
+'Where am I' is a spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. Match the correct country name to each image. Countries you identify will accurately show up less often.
 
 You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/dashboard) and the server code [here](https://github.com/thinkful-ei21/Mike-Giovanni-Spaced-Repetition-Server)
 
