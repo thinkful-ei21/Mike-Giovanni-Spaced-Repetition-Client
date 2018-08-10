@@ -34,9 +34,7 @@ You can find the hosted app [here](https://thawing-shore-65597.herokuapp.com/das
 - Trello boards are super helpful
 - Set aside more time for testing next time
 
-future features:
+### FUTURE FEATURES:
 - add daily sessions with end of session summary statistics
 - pull images from google dynamically
-
-
 
