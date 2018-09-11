@@ -34,12 +34,11 @@ export class Dashboard extends React.Component {
     }
 
     showUI() {
-        if (this.props.result !== '' && this.props.answer) { 
-            console.log(this.props)
+        if (this.props.result !== '' && this.props.answer) {
             return (
-            <div className="result ">
+            <div className="result">
                 {this.showResult()}
-                </div>
+            </div>
             )
         } else {
             return (
@@ -72,15 +71,18 @@ export class Dashboard extends React.Component {
         if(this.props.result === false) {
             return (
                 <div className="result incorrect">
-                    {console.log(this.props.result)}
-                    The correct answer is {answer}
+                    <div className="result-block">
+                        The correct answer is {answer}
+                    </div>
                     <button autoFocus onClick={e => this.getNextCard()} >Next</button>
                 </div>
             )
         } else {
             return (
                 <div className="result correct">
-                    {answer} is correct!
+                    <div className="result-block">
+                        {answer} is correct!
+                    </div>
                     <button autoFocus onClick={e => this.getNextCard()} >Next</button>
                 </div>
             )

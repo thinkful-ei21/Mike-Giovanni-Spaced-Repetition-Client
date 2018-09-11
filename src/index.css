@@ -1,16 +1,27 @@
-body {
-  margin: 0 auto;
-  padding: 0 0 250px 0;
-  font-family: sans-serif;
-  text-align: center;
+html {
   background-image: url('images/oldmap.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
+body {
+  margin: 0 auto;
+  padding: 0 0 250px 0;
+  font-family: sans-serif;
+  text-align: center;
+  /* background-image: url('images/oldmap.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+}
+
 h1, h2 {
   font-family: 'Rufina', serif;
+}
+
+h2.login-title {
+  margin-bottom: 10px;
 }
 
 p, button {

@@ -92,13 +92,17 @@ input[type="text"].location-input {
 	-o-border-radius: 5px;
 }
 
+.result-block {
+	min-height: 32px;
+}
+
 .result {
 	margin-top: -10px;
 	padding-top: 20px;
 	padding-bottom: 10px;
-	font-size: 30px;
+	font-size: 24px;
 	font-family: 'Rufina', serif;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .result.correct {

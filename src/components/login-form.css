@@ -52,4 +52,12 @@ input[type="password"]  {
   font-size: 22px;
   margin-bottom: 0;
 }
+.error-block {
+  min-height: 18px;
+}
+
+.form-error {
+  color: red;
+  font-size: 15px;
+}
 
