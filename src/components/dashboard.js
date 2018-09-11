@@ -18,7 +18,6 @@ export class Dashboard extends React.Component {
 
     submitGuess(e) {
         e.preventDefault();
-        console.log(this.input.value)
         this.props.dispatch(sendAnswer(this.input.value))
     }
 
@@ -64,10 +63,8 @@ export class Dashboard extends React.Component {
     }
 
     showResult() {
-        console.log(this.props.answer)
         let answer = this.props.answer.charAt(0).toUpperCase()
             + this.props.answer.slice(1);
-
         if(this.props.result === false) {
             return (
                 <div className="result incorrect">

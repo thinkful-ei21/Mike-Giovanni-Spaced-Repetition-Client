@@ -45,8 +45,6 @@ export const sendAnswer = answer => (dispatch, getState) => {
   .then((data) => {
       dispatch(sendAnswerSuccess(data))
   })
-  .then(() => console.log('sending answer ', answer, state)
-  )
   .catch(err => {
       dispatch(sendAnswerError(err));
   })
