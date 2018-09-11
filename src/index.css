@@ -36,12 +36,17 @@ p, button {
 
 @media only screen and (max-width: 1024px) {
   body {
-    padding-bottom: 490px; 
+    /* padding-bottom: 490px; */
   }
+
 }
 
 @media only screen and (max-width: 550px) {
   body {
     padding-bottom: 290px; 
   }
+
+  input[type="text"].location-input {
+		margin-left: -75px; 
+	}
 }

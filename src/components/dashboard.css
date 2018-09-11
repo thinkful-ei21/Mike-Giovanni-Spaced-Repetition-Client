@@ -113,6 +113,18 @@ input[type="text"].location-input {
 	color: red;
 }
 
+@media only screen and (max-width: 640px) {
+	.dashboard {
+		width: 500px;
+		overflow: hidden;
+	}
+
+	img.card-image {
+		width: 500px;
+		height: inherit;
+		}
+}
+
 @media only screen and (max-width: 550px) {
 	img.card-image {
 	width: 300px;
@@ -141,7 +153,6 @@ input[type="text"].location-input {
 @media only screen and (max-width: 420px) {
 
 	input[type="text"].location-input {
-		margin-left: -75px; 
 		margin-top: 30px;
 	}
 
