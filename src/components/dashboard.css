@@ -41,6 +41,9 @@ img.card-image {
 	-o-border-top-left-radius: 6px;
 }
 
+.visible-card {
+	height: 475px;
+}
 
 .submit-form {
 	margin: -10px 100px 0 100px;
@@ -123,6 +126,9 @@ input[type="text"].location-input {
 		width: 500px;
 		height: inherit;
 		}
+	.visible-card {
+	height: 400px;
+	}
 }
 
 @media only screen and (max-width: 550px) {
@@ -130,7 +136,9 @@ input[type="text"].location-input {
 	width: 300px;
 	height: inherit;
 	}
-
+	.visible-card {
+		height: 225px;
+	}
 
 	.dashboard {
 		width: 300px;
