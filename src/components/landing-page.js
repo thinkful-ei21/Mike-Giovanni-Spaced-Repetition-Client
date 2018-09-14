@@ -13,7 +13,7 @@ export function LandingPage(props) {
 
     return (
         <div className="home" role="complementary" aria-live="polite" aria-atomic="true">
-        <p>A spaced-repetition app for associating famous monuments with the countries they are in and for inspiring future travel. <br /><br />Match the correct country name to each image. Countries you identify accurately will show up less often.</p>
+        <p>A learning experience for associating famous monuments with the countries they are in. It is great for testing your memory and for inspiring future travel. <br /><br />Match the correct country name to each image. Using spaced repition, countries you identify accurately will show up less often.</p>
         <LoginForm />
         </div>
     );
